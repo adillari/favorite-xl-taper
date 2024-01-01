@@ -1,6 +1,10 @@
-<h1>Upload zip of xlsx/xls files to retrieve merged file</h1>
-<form action="/" method="POST" enctype="multipart/form-data">
-    <label for="file">File:</label>
-    <input type="file" id="file" name="file"><br />
-    <button>Upload</button>
-</form>
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Upload zip of xlsx/xls files to retrieve merged file</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br />
+        <button>Upload</button>
+    </form>
+{% endblock %}
